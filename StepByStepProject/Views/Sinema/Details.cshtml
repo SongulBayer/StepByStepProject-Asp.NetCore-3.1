@@ -1,0 +1,42 @@
+﻿@model StepByStepProject.Models.Sinema
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Sinema</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.SinemaAd)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.SinemaAd)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Ilce)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Ilce.Id)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Iletisim)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Iletisim)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Adres)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Adres)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

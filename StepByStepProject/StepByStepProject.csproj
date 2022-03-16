@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UserSecretsId>aspnet-StepByStepProject-063F0BBC-41BF-4C0C-918B-11D9C1193458</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Data\Migrations\20220307194629_YeniTablolar.cs" />
+    <Compile Remove="Data\Migrations\20220307194629_YeniTablolar.Designer.cs" />
+    <Compile Remove="Data\Migrations\20220307195418_YeniTablolar.cs" />
+    <Compile Remove="Data\Migrations\20220307195418_YeniTablolar.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="3.1.22" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="3.1.22" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="3.1.22" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.21" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.21">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\img\films\" />
+  </ItemGroup>
+
+</Project>

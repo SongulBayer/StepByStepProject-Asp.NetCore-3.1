@@ -1,0 +1,42 @@
+﻿@model StepByStepProject.Models.Salon
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>Salon</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="SalonAd" class="control-label"></label>
+                <input asp-for="SalonAd" class="form-control" />
+                <span asp-validation-for="SalonAd" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SinemaId" class="control-label"></label>
+                <select asp-for="SinemaId" class ="form-control" asp-items="ViewBag.SinemaId"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="Kapasite" class="control-label"></label>
+                <input asp-for="Kapasite" class="form-control" />
+                <span asp-validation-for="Kapasite" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

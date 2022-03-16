@@ -1,0 +1,36 @@
+﻿@model StepByStepProject.Models.Salon
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Salon</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.SalonAd)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.SalonAd)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Sinema)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Sinema.Id)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Kapasite)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Kapasite)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

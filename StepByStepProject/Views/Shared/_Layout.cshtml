@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - StepByStepProject</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" href="~/css/style.css" />
+    <link rel="stylesheet" href="~/css/boostrap2.css" />
+    <link rel="stylesheet" href="~/css/minty.css" />
+    <link rel="stylesheet" href="~/css/_variables.scss" />
+    <link rel="stylesheet" href="~/css/_bootswatch.scss" />
+
+
+
+
+
+</head>
+<body>
+    <header>
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <div class="container px-5">
+                <a class="navbar-brand" href="index.html">Start Bootstrap</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+            
+                        <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" id="navbarDropdownBlog" href="#" role="button" data-toggle="dropdown" aria-expanded="true">
+                            Admin
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
+                                <a class="dropdown-item" asp-area="" asp-controller="Language" asp-action="Index">Diller</a>
+                                <a class="dropdown-item" asp-area="" asp-controller="Kategori" asp-action="Index">Kategoriler</a>
+                                <a class="dropdown-item" asp-area="" asp-controller="Film" asp-action="Index">Filimler</a>
+                                <a class="dropdown-item" asp-area="" asp-controller="Country" asp-action="Index">Ülkeler</a>
+                                <a class="dropdown-item" asp-area="" asp-controller="Actor" asp-action="Index">Oyuncular</a>
+                                <a class="dropdown-item" asp-area="" asp-controller="Yonetmen" asp-action="Index">Yonetmenler</a>
+                                <a class="dropdown-item" asp-area="" asp-controller="Il" asp-action="Index">İller</a>
+                                <a class="dropdown-item" asp-area="" asp-controller="Ilce" asp-action="Index">İlçeler</a>
+                                <a class="dropdown-item" asp-area="" asp-controller="Sinema" asp-action="Index">Sinamalar</a>
+                                <a class="dropdown-item" asp-area="" asp-controller="Salon" asp-action="Index">Salonlar</a>
+                                <a class="dropdown-item" asp-area="" asp-controller="Gosterimler" asp-action="Index">Gösterimler</a>
+                                <a class="dropdown-item" asp-area="" asp-controller="Seans" asp-action="Index">Seanslar</a>
+
+
+
+
+
+
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" id="navbarDropdownPortfolio" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Portfolio</a>
+                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownPortfolio">
+                                <li><a class="dropdown-item" href="portfolio-overview.html">Portfolio Overview</a></li>
+                                <li><a class="dropdown-item" href="portfolio-item.html">Portfolio Item</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-secondary bg-primary">
+        <div class="container">
+            &copy; 2022 - StepByStepProject - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @RenderSection("Scripts", required: false)
+
+
+</body>
+</html>
