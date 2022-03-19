@@ -223,3 +223,13 @@ C:\Users\songül bayer\source\repos\StepByStepProject\obj\Debug\netcoreapp3.1\Ra
 C:\Users\songül bayer\source\repos\StepByStepProject\obj\Debug\netcoreapp3.1\Razor\Views\Language\Details.cshtml.g.cs
 C:\Users\songül bayer\source\repos\StepByStepProject\obj\Debug\netcoreapp3.1\Razor\Views\Language\Edit.cshtml.g.cs
 C:\Users\songül bayer\source\repos\StepByStepProject\obj\Debug\netcoreapp3.1\Razor\Views\Language\Index.cshtml.g.cs
+C:\Users\songül bayer\source\repos\StepByStepProject\obj\Debug\netcoreapp3.1\Razor\Views\FilmAktor\Create.cshtml.g.cs
+C:\Users\songül bayer\source\repos\StepByStepProject\obj\Debug\netcoreapp3.1\Razor\Views\FilmAktor\Delete.cshtml.g.cs
+C:\Users\songül bayer\source\repos\StepByStepProject\obj\Debug\netcoreapp3.1\Razor\Views\FilmAktor\Details.cshtml.g.cs
+C:\Users\songül bayer\source\repos\StepByStepProject\obj\Debug\netcoreapp3.1\Razor\Views\FilmAktor\Edit.cshtml.g.cs
+C:\Users\songül bayer\source\repos\StepByStepProject\obj\Debug\netcoreapp3.1\Razor\Views\FilmAktor\Index.cshtml.g.cs
+C:\Users\songül bayer\source\repos\StepByStepProject\obj\Debug\netcoreapp3.1\Razor\Views\YonetmenFılm\Create.cshtml.g.cs
+C:\Users\songül bayer\source\repos\StepByStepProject\obj\Debug\netcoreapp3.1\Razor\Views\YonetmenFılm\Delete.cshtml.g.cs
+C:\Users\songül bayer\source\repos\StepByStepProject\obj\Debug\netcoreapp3.1\Razor\Views\YonetmenFılm\Details.cshtml.g.cs
+C:\Users\songül bayer\source\repos\StepByStepProject\obj\Debug\netcoreapp3.1\Razor\Views\YonetmenFılm\Edit.cshtml.g.cs
+C:\Users\songül bayer\source\repos\StepByStepProject\obj\Debug\netcoreapp3.1\Razor\Views\YonetmenFılm\Index.cshtml.g.cs

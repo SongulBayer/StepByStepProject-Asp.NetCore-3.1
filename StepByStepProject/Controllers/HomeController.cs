@@ -1,5 +1,7 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using StepByStepProject.Data;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,10 +11,21 @@ namespace StepByStepProject.Controllers
 {
     public class HomeController : Controller
     {
+        //Veritabanı nesnesini burada kullanabiliriz artık,projeye enjekte etmiş olduk
+
+        private readonly ApplicationDbContext _context;
+
+        public HomeController (ApplicationDbContext context)
+        {
+            _context = context;
+        }      
+         
         // GET: HomeController1
         public ActionResult Index()
         {
-            return View();
+            //language ve kategori foreiign keyleri de gelir
+            var db = _context.Film.Include(f=>f.Language).Include(f=>f.Kategori);
+            return View(db.ToList());
         }
 
         // GET: HomeController1/Details/5

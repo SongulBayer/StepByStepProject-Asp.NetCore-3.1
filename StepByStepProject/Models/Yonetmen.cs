@@ -19,5 +19,7 @@ namespace StepByStepProject.Models
         public Gender Gender { get; set; }
 
         public DateTime BirthDate { get; set; }
+
+        public string fullName { get { return Name + " " + LastName; } }
     }
 }

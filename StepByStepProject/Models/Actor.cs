@@ -18,7 +18,7 @@ namespace StepByStepProject.Models
 
         public Gender Gender { get; set; }
 
-
+        public string fullName { get { return Name + " " + LastName; } }
     }
     public enum Gender
     {

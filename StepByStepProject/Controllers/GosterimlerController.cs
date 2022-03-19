@@ -50,9 +50,9 @@ namespace StepByStepProject.Controllers
         // GET: Gosterimler/Create
         public IActionResult Create()
         {
-            ViewData["FilmId"] = new SelectList(_context.Film, "Id", "Id");
-            ViewData["SalonId"] = new SelectList(_context.Salon, "Id", "Id");
-            ViewData["SinemaId"] = new SelectList(_context.Sinema, "Id", "Id");
+            ViewData["FilmId"] = new SelectList(_context.Film, "Id", "FilmAd");
+            ViewData["SalonId"] = new SelectList(_context.Salon, "Id", "SalonAd");
+            ViewData["SinemaId"] = new SelectList(_context.Sinema, "Id", "SinemaAd");
             return View();
         }
 
@@ -69,9 +69,9 @@ namespace StepByStepProject.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["FilmId"] = new SelectList(_context.Film, "Id", "Id", gosterimler.FilmId);
-            ViewData["SalonId"] = new SelectList(_context.Salon, "Id", "Id", gosterimler.SalonId);
-            ViewData["SinemaId"] = new SelectList(_context.Sinema, "Id", "Id", gosterimler.SinemaId);
+            ViewData["FilmId"] = new SelectList(_context.Film, "Id", "FilmAd", gosterimler.FilmId);
+            ViewData["SalonId"] = new SelectList(_context.Salon, "Id", "SalonAd", gosterimler.SalonId);
+            ViewData["SinemaId"] = new SelectList(_context.Sinema, "Id", "SinemaAd", gosterimler.SinemaId);
             return View(gosterimler);
         }
 
@@ -88,9 +88,9 @@ namespace StepByStepProject.Controllers
             {
                 return NotFound();
             }
-            ViewData["FilmId"] = new SelectList(_context.Film, "Id", "Id", gosterimler.FilmId);
-            ViewData["SalonId"] = new SelectList(_context.Salon, "Id", "Id", gosterimler.SalonId);
-            ViewData["SinemaId"] = new SelectList(_context.Sinema, "Id", "Id", gosterimler.SinemaId);
+            ViewData["FilmId"] = new SelectList(_context.Film, "Id", "FilmAd", gosterimler.FilmId);
+            ViewData["SalonId"] = new SelectList(_context.Salon, "Id", "SalonAd", gosterimler.SalonId);
+            ViewData["SinemaId"] = new SelectList(_context.Sinema, "Id", "SinemaAd", gosterimler.SinemaId);
             return View(gosterimler);
         }
 
@@ -126,9 +126,9 @@ namespace StepByStepProject.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["FilmId"] = new SelectList(_context.Film, "Id", "Id", gosterimler.FilmId);
-            ViewData["SalonId"] = new SelectList(_context.Salon, "Id", "Id", gosterimler.SalonId);
-            ViewData["SinemaId"] = new SelectList(_context.Sinema, "Id", "Id", gosterimler.SinemaId);
+            ViewData["FilmId"] = new SelectList(_context.Film, "Id", "FilmAd", gosterimler.FilmId);
+            ViewData["SalonId"] = new SelectList(_context.Salon, "Id", "SalonAd", gosterimler.SalonId);
+            ViewData["SinemaId"] = new SelectList(_context.Sinema, "Id", "SinemaAd", gosterimler.SinemaId);
             return View(gosterimler);
         }
 

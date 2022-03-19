@@ -376,13 +376,13 @@ namespace StepByStepProject.Data.Migrations
                     b.Property<DateTime>("Bitis")
                         .HasColumnType("datetime2");
 
-                    b.Property<int>("FilmId")
+                    b.Property<int?>("FilmId")
                         .HasColumnType("int");
 
-                    b.Property<int>("SalonId")
+                    b.Property<int?>("SalonId")
                         .HasColumnType("int");
 
-                    b.Property<int>("SinemaId")
+                    b.Property<int?>("SinemaId")
                         .HasColumnType("int");
 
                     b.HasKey("Id");
@@ -706,21 +706,15 @@ namespace StepByStepProject.Data.Migrations
                 {
                     b.HasOne("StepByStepProject.Models.Film", "Film")
                         .WithMany()
-                        .HasForeignKey("FilmId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("FilmId");
 
                     b.HasOne("StepByStepProject.Models.Salon", "Salon")
                         .WithMany()
-                        .HasForeignKey("SalonId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("SalonId");
 
                     b.HasOne("StepByStepProject.Models.Sinema", "Sinema")
                         .WithMany()
-                        .HasForeignKey("SinemaId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("SinemaId");
                 });
 
             modelBuilder.Entity("StepByStepProject.Models.Ilce", b =>

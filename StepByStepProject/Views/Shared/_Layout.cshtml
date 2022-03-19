@@ -26,12 +26,10 @@
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-                        <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
-            
-                        <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+                        <li class="nav-item" ><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item" asp-area="" asp-controller="Vizyon" asp-action="Index"><a class="nav-link" href="about.html">Vizyondakiler</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Yakında</a></li>
+                        <li class="nav-item"><a class="nav-link" href="pricing.html">Yorumlar</a></li>
 
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" id="navbarDropdownBlog" href="#" role="button" data-toggle="dropdown" aria-expanded="true">
@@ -41,6 +39,7 @@
                                 <a class="dropdown-item" asp-area="" asp-controller="Language" asp-action="Index">Diller</a>
                                 <a class="dropdown-item" asp-area="" asp-controller="Kategori" asp-action="Index">Kategoriler</a>
                                 <a class="dropdown-item" asp-area="" asp-controller="Film" asp-action="Index">Filimler</a>
+                                <div class="dropdown-divider"></div>
                                 <a class="dropdown-item" asp-area="" asp-controller="Country" asp-action="Index">Ülkeler</a>
                                 <a class="dropdown-item" asp-area="" asp-controller="Actor" asp-action="Index">Oyuncular</a>
                                 <a class="dropdown-item" asp-area="" asp-controller="Yonetmen" asp-action="Index">Yonetmenler</a>
@@ -50,21 +49,18 @@
                                 <a class="dropdown-item" asp-area="" asp-controller="Salon" asp-action="Index">Salonlar</a>
                                 <a class="dropdown-item" asp-area="" asp-controller="Gosterimler" asp-action="Index">Gösterimler</a>
                                 <a class="dropdown-item" asp-area="" asp-controller="Seans" asp-action="Index">Seanslar</a>
-
-
-
-
-
+                                <a class="dropdown-item" asp-area="" asp-controller="FilmAktor" asp-action="Index">Film ve Oyuncular</a>
+                                <a class="dropdown-item" asp-area="" asp-controller="YonetmenFılm" asp-action="Index">Film ve Yönetmenler</a>
 
                             </div>
                         </li>
-                        <li class="nav-item dropdown">
+                        @*<li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" id="navbarDropdownPortfolio" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Portfolio</a>
                             <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownPortfolio">
                                 <li><a class="dropdown-item" href="portfolio-overview.html">Portfolio Overview</a></li>
                                 <li><a class="dropdown-item" href="portfolio-item.html">Portfolio Item</a></li>
                             </ul>
-                        </li>
+                        </li>*@
                     </ul>
                 </div>
             </div>
