@@ -233,3 +233,4 @@ C:\Users\songül bayer\source\repos\StepByStepProject\obj\Debug\netcoreapp3.1\Ra
 C:\Users\songül bayer\source\repos\StepByStepProject\obj\Debug\netcoreapp3.1\Razor\Views\YonetmenFılm\Details.cshtml.g.cs
 C:\Users\songül bayer\source\repos\StepByStepProject\obj\Debug\netcoreapp3.1\Razor\Views\YonetmenFılm\Edit.cshtml.g.cs
 C:\Users\songül bayer\source\repos\StepByStepProject\obj\Debug\netcoreapp3.1\Razor\Views\YonetmenFılm\Index.cshtml.g.cs
+C:\Users\songül bayer\source\repos\StepByStepProject\obj\Debug\netcoreapp3.1\Razor\Views\Vizyon\Index.cshtml.g.cs

@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using StepByStepProject.Data;
@@ -14,10 +15,12 @@ namespace StepByStepProject.Controllers
         //Veritabanı nesnesini burada kullanabiliriz artık,projeye enjekte etmiş olduk
 
         private readonly ApplicationDbContext _context;
+        private readonly IWebHostEnvironment _hostingEnvironment;
 
-        public HomeController (ApplicationDbContext context)
+        public HomeController (ApplicationDbContext context, IWebHostEnvironment hostingEnvironment)
         {
             _context = context;
+            _hostingEnvironment = hostingEnvironment;
         }      
          
         // GET: HomeController1
@@ -45,6 +48,7 @@ namespace StepByStepProject.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Create(IFormCollection collection)
         {
+
             try
             {
                 return RedirectToAction(nameof(Index));

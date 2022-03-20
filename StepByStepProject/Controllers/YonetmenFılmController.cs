@@ -49,8 +49,8 @@ namespace StepByStepProject.Controllers
         // GET: YonetmenFılm/Create
         public IActionResult Create()
         {
-            ViewData["FilmId"] = new SelectList(_context.Film, "Id", "fullName");
-            ViewData["YonetmenId"] = new SelectList(_context.Yonetmen, "Id", "Name");
+            ViewData["FilmId"] = new SelectList(_context.Film, "Id", "FilmAd");
+            ViewData["YonetmenId"] = new SelectList(_context.Yonetmen, "Id", "fullName");
             return View();
         }
 
@@ -67,8 +67,8 @@ namespace StepByStepProject.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["FilmId"] = new SelectList(_context.Film, "Id", "fullName", yonetmenFılm.FilmId);
-            ViewData["YonetmenId"] = new SelectList(_context.Yonetmen, "Id", "Name", yonetmenFılm.YonetmenId);
+            ViewData["FilmId"] = new SelectList(_context.Film, "Id", "FilmAd", yonetmenFılm.FilmId);
+            ViewData["YonetmenId"] = new SelectList(_context.Yonetmen, "Id", "fullName", yonetmenFılm.YonetmenId);
             return View(yonetmenFılm);
         }
 
@@ -85,8 +85,8 @@ namespace StepByStepProject.Controllers
             {
                 return NotFound();
             }
-            ViewData["FilmId"] = new SelectList(_context.Film, "Id", "fullName", yonetmenFılm.FilmId);
-            ViewData["YonetmenId"] = new SelectList(_context.Yonetmen, "Id", "Id", yonetmenFılm.YonetmenId);
+            ViewData["FilmId"] = new SelectList(_context.Film, "Id", "FilmAd", yonetmenFılm.FilmId);
+            ViewData["YonetmenId"] = new SelectList(_context.Yonetmen, "Id", "fullName", yonetmenFılm.YonetmenId);
             return View(yonetmenFılm);
         }
 
@@ -122,8 +122,8 @@ namespace StepByStepProject.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["FilmId"] = new SelectList(_context.Film, "Id", "Id", yonetmenFılm.FilmId);
-            ViewData["YonetmenId"] = new SelectList(_context.Yonetmen, "Id", "Id", yonetmenFılm.YonetmenId);
+            ViewData["FilmId"] = new SelectList(_context.Film, "Id", "FilmAd", yonetmenFılm.FilmId);
+            ViewData["YonetmenId"] = new SelectList(_context.Yonetmen, "Id", "fullName", yonetmenFılm.YonetmenId);
             return View(yonetmenFılm);
         }
 

@@ -1,0 +1,37 @@
+﻿@model IEnumerable<StepByStepProject.Controllers.FilmDTO>
+  @{
+      ViewData["Title"] = "Vizyondaki Filimler";
+
+  }
+<div class="container">
+    @foreach (var item in Model)
+    {
+        <br />
+        <div class="row">
+            <img src="@item.Afis" class="d-block w-100 h-50" />
+        </div>
+        <br />
+        <div class="row">
+            <div class="col-6">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="@item.Fragman"></iframe>
+                </div>
+            </div>
+            <br />
+            <div class="col-6">
+             Filmin Adı :@item.Adi <br />
+             Filmin Oyuncuları :@item.Oyuncular <br />
+             Filmin Yonetmeni :@item.Yonetmenler <br />
+             Filmin Konusu :@item.Konu <br />
+             Filmin Turu :@item.Tur <br />
+             Filmin Uzunluğu :@item.Uzunluk <br />
+             Filmin Çıkış Yılı :@item.Yil <br />
+
+            </div>
+        </div>
+
+        <br />
+     }
+
+
+</div>

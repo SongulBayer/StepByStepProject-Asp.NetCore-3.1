@@ -50,7 +50,7 @@ namespace StepByStepProject.Controllers
         public IActionResult Create()
         {
             ViewData["ActorId"] = new SelectList(_context.Actors, "Id", "fullName");
-            ViewData["FilmId"] = new SelectList(_context.Film, "Id", "Name");
+            ViewData["FilmId"] = new SelectList(_context.Film, "Id", "FilmAd");
             return View();
         }
 
@@ -68,7 +68,7 @@ namespace StepByStepProject.Controllers
                 return RedirectToAction(nameof(Index));
             }
             ViewData["ActorId"] = new SelectList(_context.Actors, "Id", "fullName", filmAktor.ActorId);
-            ViewData["FilmId"] = new SelectList(_context.Film, "Id", "Name", filmAktor.FilmId);
+            ViewData["FilmId"] = new SelectList(_context.Film, "Id", "FilmAd", filmAktor.FilmId);
             return View(filmAktor);
         }
 
@@ -86,7 +86,7 @@ namespace StepByStepProject.Controllers
                 return NotFound();
             }
             ViewData["ActorId"] = new SelectList(_context.Actors, "Id", "fullName", filmAktor.ActorId);
-            ViewData["FilmId"] = new SelectList(_context.Film, "Id", "Name", filmAktor.FilmId);
+            ViewData["FilmId"] = new SelectList(_context.Film, "Id", "FilmAd", filmAktor.FilmId);
             return View(filmAktor);
         }
 
@@ -122,8 +122,8 @@ namespace StepByStepProject.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["ActorId"] = new SelectList(_context.Actors, "Id", "Id", filmAktor.ActorId);
-            ViewData["FilmId"] = new SelectList(_context.Film, "Id", "Id", filmAktor.FilmId);
+            ViewData["ActorId"] = new SelectList(_context.Actors, "Id", "fullName", filmAktor.ActorId);
+            ViewData["FilmId"] = new SelectList(_context.Film, "Id", "FilmAd", filmAktor.FilmId);
             return View(filmAktor);
         }
 
