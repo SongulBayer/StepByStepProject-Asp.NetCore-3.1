@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "pclt2ets3NiLss4OJJwQ/lMCdVtL4B1kmYXTfLeVsX0HZsPHoAIHK0pKn05x3lv3VZCJ2Q+EU/y4XqVUtAx5MQ==",
+  "dgSpecHash": "XqMPQpSxQnfMr9aiSAW3IG2Mv0Q17xUiPze6o1nWNeOO4feKFg8ORXCkp8oESUdqmNjWIgcLklb9lhls92QAYg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\songül bayer\\source\\repos\\StepByStepProject\\StepByStepProject.csproj",
+  "projectFilePath": "C:\\Users\\songül bayer\\OneDrive\\Belgeler\\GitHub\\StepByStepProject-Asp.NetCore-3.1\\StepByStepProject\\StepByStepProject.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\songül bayer\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\3.1.22\\microsoft.aspnetcore.cryptography.internal.3.1.22.nupkg.sha512",
     "C:\\Users\\songül bayer\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\3.1.22\\microsoft.aspnetcore.cryptography.keyderivation.3.1.22.nupkg.sha512",
@@ -171,7 +171,8 @@
     "C:\\Users\\songül bayer\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
     "C:\\Users\\songül bayer\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
     "C:\\Users\\songül bayer\\.nuget\\packages\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512",
-    "C:\\Users\\songül bayer\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512"
+    "C:\\Users\\songül bayer\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512",
+    "C:\\Users\\songül bayer\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.28\\microsoft.netcore.app.host.win-x64.3.1.28.nupkg.sha512"
   ],
   "logs": []
 }
