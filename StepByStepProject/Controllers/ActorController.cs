@@ -25,6 +25,12 @@ namespace StepByStepProject.Controllers
             var applicationDbContext = _context.Actors.Include(a => a.country);
             return View(await applicationDbContext.ToListAsync());
         }
+         public async Task<IActionResult> IndexOrnek()
+        {
+            var applicationDbContext = _context.Actors.Include(a => a.country);
+            return View(await applicationDbContext.ToListAsync());
+        }
+        
 
         // GET: Actor/Details/5
         public async Task<IActionResult> Details(int? id)
